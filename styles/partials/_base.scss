@@ -1,0 +1,90 @@
+//VARIABLE STYLES
+$primary: #235789; //neon blue
+$secondary: #f1d302; // yellow
+$tertiary: #c1292e;
+
+$text: #161925; //Black
+$primary-background: #fdfffc; //Ice blue
+$secondary-background: #17182f; //Light light blue
+
+$primary-font: 'Poppins', sans-serif; 
+// $secondary-font:;
+
+$text: #2c2c2c; //Black
+// $color-first: #4df;
+// $color-second: #0F0;
+// $color-third: #F00;
+// $color-fourth: #FF0;
+// $decoration: #50e3c2; // Greenish cyan
+
+
+// BASE STYLES
+html {
+  font-size: 125%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font;
+  // background-color: #FAFAFA;
+  background-color: $primary-background;
+  line-height: 1.6;
+  position: relative;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: .8rem;
+}
+
+p {
+  color: $text;
+  // letter-spacing: 2px;
+  font-size: .8rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: $text;
+  display: inline-block;
+  transition: all 0.3s;
+  &:visited {
+    display: none;
+  }
+  // &:hover {
+  //   // border-bottom: 1px solid #4df;
+  //   // color: #4df;
+  //   // color: #4df;
+  //   // box-shadow: 0px 20px 10px -20px#4df;
+  //   // border-bottom: 1px solid #0FF;
+  // }
+}
+
+
+.wrapper {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper-wide {
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto;
+}

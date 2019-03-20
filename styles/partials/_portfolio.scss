@@ -1,0 +1,253 @@
+// PORTFOLIO STYLES
+.portfolio {
+  // margin: 60px 0;
+  padding-top: 80px;
+  background: rgb(230, 230, 230);
+
+}
+
+.portfolio-container {
+  // margin-bottom: 100px;
+  position: relative;
+  text-align: center;
+  // padding-bottom: 30px;
+  h2 {
+    border-bottom: 10px solid $secondary ;
+    padding-bottom: 10px;
+    color: $primary;
+    // box-shadow: 0px 20px 10px -20px #0FF;
+  }
+  // h2::before {
+  //   content:"";
+  //     display:block;
+  //     width: 20px;
+  //     background:black;
+  //     position:absolute;
+  //     // top:50%;
+  // }
+}
+.project-first {
+  display: flex;
+  padding: 80px 0 60px 0;
+}
+
+.project {
+  display: flex;
+  // justify-content: space-between;
+  padding: 60px 0;
+  // margin: 200px 0;
+}
+
+.two,
+.five {
+  flex-flow: row;
+}
+
+.one,
+.three {
+  flex-flow: row-reverse;
+  text-align: right;
+}
+
+.left {
+  // margin-left: 80px;
+}
+
+.right {
+  // margin-right: 80px;
+}
+
+.skills {
+  text-transform: uppercase;
+  line-height: 2px;
+  font-weight: bold;
+  color: $primary;
+  // margin: 0;
+  // padding: 0;
+}
+
+.project-text {
+  width: 42%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  flex-flow: column;
+  // padding: 0 50px;
+  h2 {
+    font-size: 2.4rem;
+    padding-bottom: 20px;
+    // color: $tertiary;
+    // font-family: 'Playfair Display', serif;
+  font-family: 'Teko', sans-serif;
+  // font-family: 'PT Serif', serif;
+  }
+  p:nth-of-type(1){
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+  }
+  a {
+    text-transform: capitalize;
+  }
+}
+
+.project-desc {
+  font-family: 'Teko', sans-serif;
+  // font-family: 'Playfair Display', serif;
+  // font-family: 'PT Serif', serif;
+}
+
+.link-container {
+  display: flex;
+  // justify-content: space-between;
+  a {
+    // padding: 10px 0;
+    margin-top: 10px;
+    // margin: 0 10px;
+    // padding-right: 20px;
+    font-weight: bold;
+    // border: 2px solid $secondary;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  &:hover {
+    // border-bottom: 1px solid #4df;
+    // box-shadow: 0px 20px 10px -20px #0FF;
+    // color: #0FF;
+    // border-bottom: 2px solid #4df;
+  }
+}
+
+// Right Aligned Buttons
+.live-right  {
+  justify-content: flex-end;
+  // text-align: right;
+}
+
+.link-live {
+  margin-right: 10px;
+  padding: 5px 30px;
+  color: $primary;
+  background: $secondary;
+  &:hover {
+    color: $secondary;
+    background: $primary;
+    // border-bottom: 10px solid rgb(255, 196, 0);
+  }
+}
+
+.link-github {
+  padding: 5px 15px;
+  color: $primary;
+  background: $secondary;
+  &:hover {
+    color: $secondary;
+    background: $primary;
+  }
+}
+
+.project-image {
+  width: 42%;
+  overflow: hidden;
+  position: relative;
+}
+
+// .project-image img {
+//   transition: all .3s ease;
+// }
+
+// .project-image:hover img {
+//   transform: scale(1.1);
+// }
+
+
+// .bg-overlay {
+//   background-color: rgba(0,0,0,0.6);
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   opacity: 0;
+//   transition: all .3s ease;
+//   z-index: 0;
+// }
+
+// .project-image:hover .bg-overlay {
+//   opacity: 1;
+// }
+
+
+// .line {
+//   position: absolute;
+//   top: 20px;
+//   left: 20px;
+//   z-index: 1;
+//   width: calc(50% - 20px);
+//   height: calc(50% - 20px);
+//   color: #fff;
+//   transition: all .3s ease;
+//   &::before {
+//     height: 1px;
+//     width: 0;
+//     content: '';
+//     background: #fff;
+//     display: block;
+//     transition: all .5s ease;
+//     box-sizing: inherit;
+//   }
+//   &::after {
+//     width: 1px;
+//     height: 0;
+//     content: '';
+//     background: #fff;
+//     display: block;
+//     transition: all .5s ease;
+//     box-sizing: inherit;
+//   }
+// }
+
+// .line-bottom {
+//   top: auto;
+//   left: auto;
+//   bottom: 20px;
+//   right: 20px;
+//   transform: rotate(180deg);
+// }
+
+// .project-image:hover .line::before,
+// .project-image:hover .line-bottom::before  {
+//   width: 100%;
+// }
+
+// .project-image:hover .line::after,
+// .project-image:hover .line-bottom::after {
+//   height: 100%;
+// }
+
+
+// .connect-line {
+//   border-top: 2px solid #0FF;
+//   box-shadow: 0px 15px 10px -15px #0FF;
+
+//   position: absolute;
+//   left: -100px;
+//   top: 170px;
+//   width: 80px;
+// }
+
+// .connect-line::before {
+//   content: '○';
+//     width: 5px;
+//   height: 5px;
+//   display: block;
+//   position: absolute;
+//   left: -10px;
+//   top: -18px;
+// }
+
+
+
+

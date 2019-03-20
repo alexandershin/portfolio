@@ -1,0 +1,164 @@
+.skills-section {
+  height: 90vh;
+  padding-top: 80px;
+  // margin-top: 60px;
+  text-align: center;
+  h2 {
+    // box-shadow: 0px 20px 10px -20px #0F0;
+    margin-bottom: 80px;
+    padding-bottom: 10px;
+    color: $primary;
+    border-bottom: 10px solid $secondary;
+  }
+}
+
+
+.icon-row {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  // padding: 20px;
+}
+
+.icon-container {
+  display: flex;
+  flex-flow: column;
+  padding: 40px 40px;
+}
+
+.icon {
+  font-size: 3.7rem;
+  // font-size: 3.5rem;
+}
+
+// Title of skill underneath icon
+.name {
+  // font-family: $primary-font;
+  font-family: 'Teko', sans-serif;
+
+  text-transform: uppercase;
+  // font-size: .6rem;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?pkq6cs');
+  src:  url('../fonts/icomoon.eot?pkq6cs#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?pkq6cs') format('truetype'),
+    url('../fonts/icomoon.woff?pkq6cs') format('woff'),
+    url('../fonts/icomoon.svg?pkq6cs#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-visualstudiocode:before {
+  content: "\e909";
+  color: $primary;
+  // color: #ffca28;
+  // color: #09c4ce;
+  // color:rgb(1, 64, 255)
+}
+.icon-jquery:before {
+  content: "\e900";
+  color: $primary;
+}
+.icon-javascript:before {
+  content: "\e901";
+  color: $primary;
+}
+.icon-react:before {
+  content: "\e902";
+  color: $primary;
+}
+.icon-git:before {
+  content: "\e903";
+  color: $primary;
+}
+.icon-github:before {
+  content: "\e904";
+  color: $primary;
+}
+.icon-sass:before {
+  content: "\e905";
+  color: $primary;
+}
+.icon-firebase:before {
+  content: "\e906";
+  color: $primary;
+}
+.icon-css3:before {
+  content: "\e907";
+  color: $primary;
+}
+.icon-html5:before {
+  content: "\e908";
+  color: $primary;
+}
+
+
+
+
+// .icon {
+//   display: inline-block;
+//   width: 1rem;
+//   height: 1rem;
+//   stroke-width: 0;
+//   stroke: currentColor;
+//   fill: currentColor;
+// }
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+
+// .icons {
+//   // width: 100%;
+//   ul {
+//     display: flex; 
+//     justify-content: center;
+//     li {
+//       font-size: 0.8rem;
+//       width: 7%;
+//       height: 1rem;
+//       padding: 0 10px;
+//       margin: 0 50px;
+//       img {
+//         width: 100%;
+//         fill: #4feff8;
+//         transition: all .3 ease;
+//         &:hover {
+//         // box-shadow: 0px 20px 10px -10px #0F0;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .iconsbox {
+//   padding-top: 150px;
+// }
+
+

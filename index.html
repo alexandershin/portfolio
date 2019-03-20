@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Playfair+Display|Teko" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Alexander Shin</title>
+  </head>
+  <body>
+    <!-- HEADER STARTS -->
+    <header>
+      <div class="header-overlay">
+        <!-- PARTICLE JS -->
+        <div id="particles-js"></div>
+        <div class="wrapper-wide">
+          <div class="header-hero-name">
+            <h1>Alexander Shin</h1>
+            <p>Front-End Developer</p>
+          </div>
+          <div class="banner">
+            <div class="wrapper-wide header-section">
+              <div class="header-section-name">
+                <a href="#">
+                  <img src="assets/logo7.png" alt="">
+                </a>
+              </div>
+              <nav class="header-nav">
+                <ul>
+                  <li><a href="#about">The Coder</a></li>
+                  <li class="green"><a href="#portfolio">Projects</a></li>
+                  <li class="red"><a href="#skills">Skills</a></li>
+                  <li class="yellow"><a href="#contact">Let's Chat</a></li>
+                </ul>
+              </nav>
+              
+              <div id="container" tabindex="0" aria-pressed="false" aria-label="Menu" role="button" aria-controls="navigation">
+                <div id="burger" >
+                  <div class="bun top"></div>
+                  <div class="filling"></div>
+                  <div class="bun bottom"></div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </header> 
+    <!-- HEADER ENDS -->
+
+    
+    <!-- MAIN SECTION STARTS -->
+    <main>
+      <!-- ABOUT SECTION STARTS -->
+      <section class="about-section" id="about">
+        <div class="wrapper-wide">
+          <h2 class="title">The Coder</h2>
+          <div class="about">
+            <div class="about-text">
+              <h3><span class="about-text-greeting">Hi! I'm Alex</span>, a front-end developer based in Toronto.</h3>
+              <p>I have a passion for learning new things and building creative, accessible, and responsive websites. I’m a proud graduate of the Web Development Immersive program from HackerYou College of Technology.</p>
+              <p>I'm always up for a challenge and digging into how things work. I am currently growing my skills in React. When I'm not writing code you'll find me bouldering, playing board games, or watching the latest movies.</p>
+            </div>
+            <div class="about-image">
+              <img src="assets/profile.png" alt="photo of Alex Shin">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION ENDS -->
+      <!-- PORTFOLIO SECTION STARTS -->
+      <section class="portfolio" id="portfolio">
+        <div class="wrapper-wide">
+          <div class="portfolio-container">
+            <h2 class="title">Projects</h2>
+          </div>
+            <div class="project-first five">
+              <div class="project-image">
+                <img src="assets/todoom.png" alt="computer screen capture of to doom list project">
+              </div>
+              <div class="project-text left">
+                <!-- <span class="connect-line"></span> -->
+                <h2>To Doom List</h2>
+                <p class="project-desc">Be prepared for any disaster. Find a bunker and make a list of what'll you need to survive!</p>
+                <p>To Doom List is a group agency project created with React using Firebase, Google authentication, and the Mapquest API. Users are able to login with their Google or as a guest and can choose a bunker. Each bunker has it's own lists and memos that can be added, deleted or checked off as complete. Made in collaboration with <a href="http://ahuoizabaiye.com/" target="_blank">Ahuoiza Baiye</a>, <a href="http://glenmccann.com/" target="_blank">Glen McCann</a>, and <a href="http://zoeconnolly.com/" target="_blank">Zoe Connolly</a></p>
+                <p class="skills">React&nbsp;&nbsp;/&nbsp;&nbsp;CSS3&nbsp;&nbsp;/&nbsp;&nbsp;Firebase&nbsp;&nbsp;/&nbsp;&nbsp;API</p>
+                <div class="link-container">
+                  <a href="https://doomsday-clone-609b1.firebaseapp.com/" target="_blank" class="link-live">Live</a>
+                  <a href="https://github.com/alexandershin/project06-clone" target="_blank" class="link-github">Github</a>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="project four">
+              <div class="project-image">
+                <img src="assets/soundtrack.png" alt="computer screen capture of epic soundtrack project">
+              </div>
+              <div class="project-text right">
+                <h2>Epic Soundtrack</h2>
+                <p>Find the songs that made your favorite movies epic!</p>
+                <p>Epic Soundtrack is made with React and uses the Movie Database and Last.FM API. Users can search for a movie and be given the album soundtrack with list of songs.</p>
+                <p class="skills">React / CSS3 / API</p>
+                <div class="link-container live-right">
+                  <a href="#" target="_blank" class="link-live">Live</a>
+                  <a href="#" target="_blank" class="link-github">Github</a>
+                </div>
+              </div>
+            </div> -->
+            <div class="project three">
+              <div class="project-image">
+                <img src="assets/weather.png" alt="screen capture of weather gallery project">
+              </div>
+              <div class="project-text right">
+                <h2>Weather Gallery</h2>
+                <p class="project-desc">Check the weather with class</p>
+                <p>The Weather Gallery is powered by JavaScript, jQuery, the OpenWeather API, and Rijksmuseum API. Type in a city to find the weather condition with an associated image from the Rijksmuseum. Made in collaboration with <a href="http://dennisoba.io/" target="_blank">Dennis Oba</a>.</p>
+                <p class="skills">Html5&nbsp;&nbsp;/&nbsp;&nbsp;CSS3&nbsp;&nbsp;/&nbsp;&nbsp;Sass&nbsp;&nbsp;/&nbsp;&nbsp;Javascript&nbsp;&nbsp;/&nbsp;&nbsp;Jquery&nbsp;&nbsp;/&nbsp;&nbsp;API</p>
+                <div class="link-container live-right">
+                  <a href="https://alexandershin.ca/weather-gallery/" target="_blank" class="link-live">Live</a>
+                  <a href="https://github.com/alexandershindennisoba/weather-gallery" target="_blank" class="link-github">Github</a>
+                </div>
+              </div>
+            </div>
+            <div class="project two">
+              <div class="project-image">
+                <img src="assets/boardgame.png" alt="screen capture of board games night project">
+              </div>
+              <div class="project-text left">
+                <h2>Board Games Night</h2>
+                <p class="project-desc">Find the perfect board game for a fun night!</p>
+                <p>Board Games Night is a quiz application that helps users find the right board game for their group.</p>
+                <p class="skills">HTML5&nbsp;&nbsp;/ &nbsp;&nbsp;CSS3&nbsp;&nbsp;/&nbsp;&nbsp;Sass&nbsp;&nbsp;/&nbsp;&nbsp;Javscript&nbsp;&nbsp;/&nbsp;&nbsp;Jquery</p>
+                <div class="link-container">
+                  <a href="https://alexandershin.ca/board-games-night/" target="_blank" class="link-live">Live</a>
+                  <a href="https://github.com/alexandershin/alexander-shin-project03" target="_blank" class="link-github">Github</a>
+                </div>
+              </div>
+            </div>
+            <div class="project one last">
+              <div class="project-image">
+                <img src="assets/bikerland.png" alt="computer screen capture of Bikerland project">
+              </div>
+              <div class="project-text right">
+                <h2>Bikerland</h2>
+                <p class="project-desc">A PSD Conversion featuring bikes</p>
+                <p>Bikerland is a PSD conversion using HTML and CSS. It is a single page site with hover effects, animations and responsive design.</p>
+                <p class="skills">Html5&nbsp;&nbsp;/&nbsp;&nbsp;CSS3&nbsp;&nbsp;/&nbsp;&nbsp;Responsive Design</p>
+                <div class="link-container live-right">
+                  <a href="https://alexandershin.ca/bikerland/" target="_blank" class="link-live">Live</a>
+                  <a href="https://github.com/alexandershin/alexander_shin_project01" target="_blank" class="link-github">Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>  
+        <!-- PORTFOLIO SECTION ENDS -->
+
+        <!-- SKILLS SECTION STARTS -->
+        <section class="skills-section" id="skills">
+          <div class="wrapper-wide">
+            <h2 class="title">Skills</h2>
+
+            <div>
+              <div class="icon-row">
+                <div class="icon-container">
+                  <span class="icon icon-html5"></span>
+                  <span class="name">Html5</span>
+                </div>
+
+                <div class="icon-container">
+                  <span class="icon icon-css3"></span>
+                  <span class="name">Css3</span>
+                </div>
+
+                <div class="icon-container">
+                  <span class="icon icon-sass"></span>
+                  <span class="name">Sass</span>
+                </div>
+
+                <div class="icon-container">
+                  <span class="icon icon-javascript"></span>
+                  <span class="name">JavaScript</span>
+                </div>
+
+                <div class="icon-container">
+                  <span class="icon icon-jquery"></span>
+                  <span class="name">jQuery</span>
+                </div>
+              </div>
+
+              <div class="icon-row">
+                <div class="icon-container">
+                  <span class="icon icon-github"></span>
+                  <span class="name">Github</span>
+                </div>
+
+                <div class="icon-container">
+                  <span class="icon icon-git"></span>
+                  <span class="name">Git</span>
+                </div>
+
+                <div class="icon-container">
+                  <span class="icon icon-firebase"></span>
+                  <span class="name">Firebase</span>
+                </div>
+
+                <div class="icon-container">
+                  <span class="icon icon-react"></span>
+                  <span class="name">React</span>
+                </div>
+
+                <div class="icon-container">
+                  <span class="icon icon icon-visualstudiocode"></span>
+                  <span class="name">VS Code</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    <!-- SKILLS SECTION ENDS -->
+        
+        <!-- CONTACT SECTION STARTS -->
+      <section class="contact" id="contact">
+        <div class="wrapper-wide">
+          <h2 class="title">Let's Chat</h2>
+
+          <!-- <h3>Let's Connect!</h3> -->
+          <div class="email-container">
+            <a href="mailto:hello@alexandershin.ca" class="mymail">
+              <i class="far fa-envelope" aria-hidden=""></i>
+              <p>hello@alexandershin.ca</p> 
+            </a>
+          </div>
+          <!-- <form action="#" method="POST" name="comment" class="comment" autocomplete="off">
+            <div>
+              <label for="name"></label>
+              <input type="text" name="" placeholder="Name" id="" class="">
+            </div>
+
+            <div>
+              <label for="email"></label>
+              <input type="email" name="" placeholder="Email" id="" class="">
+            </div>
+
+            <div>
+              <label for="comment"></label> -->
+              <!-- <input type="textarea" name="" placeholder="Message" id="" class="" cols="30" rows="5"> -->
+              <!-- <textarea name="specialInstructions" cols="30" rows="5" placeholder="Hi Alex!"></textarea>
+            </div>
+
+            <input type="submit" id="submit" name="submit" value="Submit" class="">
+
+          </form> -->
+
+          <div class="contact-social">
+            <ul>
+              <li><a href="https://twitter.com/_alexandershin" target="_blank"><i class="fab fa-twitter" aria-hidden=""></i></a></li>
+              <li><a href="https://www.linkedin.com/in/alexander-shin-65048493" target="_blank"><i class="fab fa-linkedin" aria-hidden=""></i></a></li>
+              <li><a href="https://github.com/alexandershin" target="_blank"><i class="fab fa-github" aria-hidden=""></i></a></li>
+              <li><a href="https://medium.com/@alexandershin" target="_blank"><i class="fab fa-medium" aria-hidden=""></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+        <!-- CONTACT SECTION STARTS -->
+    </main>
+    <!-- MAIN SECTION ENDS -->
+
+    <!-- FOOTER STARTS -->
+    <footer>
+      <div class="wrapper-wide">
+        <p>Developed by Alexander Shin 2019</p>
+      </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>  
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
