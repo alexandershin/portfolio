@@ -76,6 +76,13 @@ a {
   // }
 }
 
+.title {
+  font-size: 3rem;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center
+}
 
 .wrapper {
   max-width: 1280px;

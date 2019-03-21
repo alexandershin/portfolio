@@ -174,6 +174,13 @@ a {
   a:visited {
     display: none; }
 
+.title {
+  font-size: 3rem;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center; }
+
 .wrapper {
   max-width: 1280px;
   width: 80%;
@@ -503,13 +510,6 @@ header {
   width: 100%;
   height: 100%; }
 
-.title {
-  font-size: 3rem;
-  display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center; }
-
 .about-section {
   padding-top: 80px;
   text-align: center; }
@@ -525,11 +525,14 @@ header {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-flow: row-reverse;
+  flex-flow: row-reverse; }
 
 .about-text {
   width: 60%;
-  margin-left: 200px;
   padding-left: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -541,11 +544,11 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-right: 50px;
+  margin-right: 50px;
   text-align: left; }
   .about-text h3 {
     padding: 10px 0;
-    line-height: 1.4; }
+    line-height: 1; }
 
 .about-text-greeting {
   font-family: 'Teko', sans-serif;
@@ -554,7 +557,7 @@ header {
 .about-image {
   position: relative;
   width: 50%;
-  margin-right: 200px;
+  padding-right: 80px;
   display: block; }
 
 .portfolio {
@@ -562,7 +565,6 @@ header {
   background: #e6e6e6; }
 
 .portfolio-container {
-  position: relative;
   text-align: center; }
   .portfolio-container h2 {
     border-bottom: 10px solid #f1d302;
@@ -585,26 +587,22 @@ header {
 .five {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row;
-  flex-flow: row; }
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
 
 .one,
 .three {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-  -ms-flex-flow: row-reverse;
-  flex-flow: row-reverse;
+  -ms-flex-flow: row-reverse wrap;
+  flex-flow: row-reverse wrap;
   text-align: right; }
 
-.skills {
-  text-transform: uppercase;
-  line-height: 2px;
-  font-weight: bold;
-  color: #235789; }
+.project-image {
+  width: 42%; }
 
 .project-text {
   width: 42%;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,7 +614,7 @@ header {
   -ms-flex-flow: column;
   flex-flow: column; }
   .project-text h2 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     padding-bottom: 20px;
     font-family: 'Teko', sans-serif; }
   .project-text p:nth-of-type(1) {
@@ -629,6 +627,21 @@ header {
 
 .project-desc {
   font-family: 'Teko', sans-serif; }
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #235789; }
+
+.break {
+  padding: 0 10px; }
 
 .link-container {
   display: -webkit-box;
@@ -662,13 +675,8 @@ header {
     color: #f1d302;
     background: #235789; }
 
-.project-image {
-  width: 42%;
-  overflow: hidden;
-  position: relative; }
-
 .skills-section {
-  height: 90vh;
+  height: 100vh;
   padding-top: 80px;
   text-align: center; }
   .skills-section h2 {
@@ -889,8 +897,34 @@ footer {
     flex-direction: column; }
   .header-hero-name p {
     font-size: 1rem; }
+  .about {
+    -ms-flex-flow: wrap;
+    flex-flow: wrap; }
+  .about-image {
+    width: 50%;
+    padding-right: 0px; }
   .about-text {
-    width: 100%; } }
+    width: 100%;
+    padding-right: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+    padding-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left; }
+    .about-text h3 {
+      padding: 10px 0;
+      line-height: 1; }
+  .about-text-greeting {
+    font-size: 2.5rem; } }
 
 @media (max-width: 950px) {
   .header-hero-name h1 {
@@ -903,14 +937,53 @@ footer {
     font-size: 1rem; } }
 
 @media (max-width: 500px) {
+  .title {
+    font-size: 2.6rem; }
   .header-hero-name {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
     font-size: 2.8rem; }
-  p {
-    font-size: 1.5rem;
+    .header-hero-name p {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+  .about-image {
+    width: 75%; }
+  .about-text {
+    padding-right: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+    padding-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; } }
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left; }
+    .about-text h3 {
+      padding: 10px 0;
+      line-height: 1; }
+  .about-text-greeting {
+    font-size: 1.5rem; }
+  .project-first {
+    display: block; }
+  .project-image {
+    width: 100%; }
+  .project-text {
+    width: 100%; }
+  .one,
+  .three {
+    text-align: left; }
+  .live-right {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .icon {
+    font-size: 2.5rem; } }

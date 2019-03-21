@@ -24,9 +24,32 @@
 
   .about {
     // display: block;
+    flex-flow: wrap;
   }
+
+  .about-image {
+    width: 50%; 
+    padding-right: 0px;
+  }
+
   .about-text {
     width: 100%;
+    padding-right: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: left;
+    h3 {
+      padding: 10px 0;
+      line-height: 1;
+    }
+  }
+
+  .about-text-greeting {
+    font-size: 2.5rem;
   }
   
 
@@ -47,13 +70,70 @@
 
 @media (max-width: 500px) {
 
+  .title {
+    font-size: 2.6rem;
+  }
+
   .header-hero-name {
     align-items: flex-start;
     font-size: 2.8rem;
-    }
     p {
-      font-size:1.5rem;
+      // font-size: 1.5rem;
       flex-direction: column;
     }
+  }
+  
+// ABOUT STYLES
+  .about-image {
+    width: 75%; 
+  }
+
+  .about-text {
+    padding-right: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: left;
+    h3 {
+      padding: 10px 0;
+      line-height: 1;
+    }
+  }
+
+  .about-text-greeting {
+    font-size: 1.5rem;
+  }
+
+  // PROJECTS STYLES
+  .project-first {
+    display: block;
+  }
+  .project-image {
+    width: 100%;
+  }
+
+  .project-text {
+    width: 100%;
+  }
+
+  .one,
+  .three {
+    // flex-flow: row wrap;
+    text-align: left;
+  }  
+
+  .live-right  {
+    justify-content: flex-start;
+  }
+
+  // SKILLS
+  .icon {
+    font-size: 2.5rem;
+}
+
+
 }
   

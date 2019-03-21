@@ -12,20 +12,43 @@ $(function () {
   });
 
 
-  // CLOSE AFTER CLICKING OUTSIDE THE NAV
-  const $menu = $('.header-nav');
+  // // CLOSE AFTER CLICKING OUTSIDE THE NAV (test play around)
 
-  $(document).mouseup(function (e) {
-    if (!$menu.is(e.target) // if the target of the click isn't the container...
-      && $menu.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-      $menu.removeClass('show');
-    }
+  $("#burger").click(function () {
+    $(this).find(".header-nav").toggleClass(".show");
   });
+});
+$(document).on("click", function (event) {
+  const $menu = $(".header-nav");
+  if ($menu !== event.target && !$menu.has(event.target).length) {
+    $(".header-nav").toggleClass(".show");
+  }      
 
-  $('.toggle').on('click', () => {
-    $menu.toggleClass('show');
-  });
+
+  // // CLOSE AFTER CLICKING OUTSIDE THE NAV
+  // const $menu = $('.header-nav');
+
+  // $(document).mouseup(function (e) {
+  //   if (!$menu.is(e.target) // if the target of the click isn't the container...
+  //     && $menu.has(e.target).length === 0 || $('.header-nav') === $('.show')) // ... nor a descendant of the container
+  //   {
+  //     $menu.removeClass('show');
+  //   }
+  // });
+
+
+  // ------
+  // $('.show').click(() => {
+  //   $('.header-nav').toggleClass('show');
+  // });
+
+
+  // $('#burger').on('click', () => {
+  //   $($menu).toggleClass('active');
+
+  //   $menu.toggleClass('show');
+
+  // });
 
 
   // TRYING GSAP

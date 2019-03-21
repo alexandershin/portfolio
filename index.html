@@ -11,9 +11,7 @@
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet"/>
-
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Playfair+Display|Teko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900|Teko" rel="stylesheet"/>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -25,7 +23,7 @@
     <header>
       <div class="header-overlay">
         <!-- PARTICLE JS -->
-        <div id="particles-js"></div>
+        <!-- <div id="particles-js"></div> -->
         <div class="wrapper-wide">
           <div class="header-hero-name">
             <h1>Alexander Shin</h1>
@@ -38,6 +36,7 @@
                   <img src="assets/logo7.png" alt="">
                 </a>
               </div>
+              <!-- NAV BAR STARTS -->
               <nav class="header-nav">
                 <ul>
                   <li><a href="#about">The Coder</a></li>
@@ -46,7 +45,9 @@
                   <li class="yellow"><a href="#contact">Let's Chat</a></li>
                 </ul>
               </nav>
+              <!-- NAV BAR ENDS -->
               
+              <!-- HAMBURGER MENU STARTS -->
               <div id="container" tabindex="0" aria-pressed="false" aria-label="Menu" role="button" aria-controls="navigation">
                 <div id="burger" >
                   <div class="bun top"></div>
@@ -54,6 +55,7 @@
                   <div class="bun bottom"></div>
                 </div>
               </div>
+              <!-- HAMBURGER MENU ENDS -->
               
             </div>
           </div>
@@ -70,13 +72,13 @@
         <div class="wrapper-wide">
           <h2 class="title">The Coder</h2>
           <div class="about">
-            <div class="about-text">
-              <h3><span class="about-text-greeting">Hi! I'm Alex</span>, a front-end developer based in Toronto.</h3>
-              <p>I have a passion for learning new things and building creative, accessible, and responsive websites. I’m a proud graduate of the Web Development Immersive program from HackerYou College of Technology.</p>
-              <p>I'm always up for a challenge and digging into how things work. I am currently growing my skills in React. When I'm not writing code you'll find me bouldering, playing board games, or watching the latest movies.</p>
-            </div>
             <div class="about-image">
               <img src="assets/profile.png" alt="photo of Alex Shin">
+            </div>
+            <div class="about-text">
+              <h3 class="about-text-greeting">Hi! I'm Alex, a front-end developer based in Toronto.</h3>
+              <p>I have a passion for learning new things and building creative, accessible, and responsive websites. I’m a proud graduate of the Web Development Immersive program from HackerYou College of Technology.</p>
+              <p>I'm always up for a challenge and digging into how things work. I am currently growing my skills in React. When I'm not writing code you'll find me bouldering, playing board games, or watching the latest movies.</p>
             </div>
           </div>
         </div>
@@ -97,7 +99,18 @@
                 <h2>To Doom List</h2>
                 <p class="project-desc">Be prepared for any disaster. Find a bunker and make a list of what'll you need to survive!</p>
                 <p>To Doom List is a group agency project created with React using Firebase, Google authentication, and the Mapquest API. Users are able to login with their Google or as a guest and can choose a bunker. Each bunker has it's own lists and memos that can be added, deleted or checked off as complete. Made in collaboration with <a href="http://ahuoizabaiye.com/" target="_blank">Ahuoiza Baiye</a>, <a href="http://glenmccann.com/" target="_blank">Glen McCann</a>, and <a href="http://zoeconnolly.com/" target="_blank">Zoe Connolly</a></p>
-                <p class="skills">React&nbsp;&nbsp;/&nbsp;&nbsp;CSS3&nbsp;&nbsp;/&nbsp;&nbsp;Firebase&nbsp;&nbsp;/&nbsp;&nbsp;API</p>
+                <ul class="skills">
+                  <li class="">React</li>
+                  <span class="break">/</span>
+                  <li class="">CSS3</li>
+                  <span class="break">/</span>
+                  <li class="">Firebase</li>
+                  <span class="break">/</span>
+                  <li class="">API</li>
+                </ul>
+<!--                 
+                <p class="skills">React<span class="break">/</span>CSS3<span class="break">/</span>Firebase<span class="break">/</span>API</p> -->
+
                 <div class="link-container">
                   <a href="https://doomsday-clone-609b1.firebaseapp.com/" target="_blank" class="link-live">Live</a>
                   <a href="https://github.com/alexandershin/project06-clone" target="_blank" class="link-github">Github</a>
@@ -127,7 +140,21 @@
                 <h2>Weather Gallery</h2>
                 <p class="project-desc">Check the weather with class</p>
                 <p>The Weather Gallery is powered by JavaScript, jQuery, the OpenWeather API, and Rijksmuseum API. Type in a city to find the weather condition with an associated image from the Rijksmuseum. Made in collaboration with <a href="http://dennisoba.io/" target="_blank">Dennis Oba</a>.</p>
-                <p class="skills">Html5&nbsp;&nbsp;/&nbsp;&nbsp;CSS3&nbsp;&nbsp;/&nbsp;&nbsp;Sass&nbsp;&nbsp;/&nbsp;&nbsp;Javascript&nbsp;&nbsp;/&nbsp;&nbsp;Jquery&nbsp;&nbsp;/&nbsp;&nbsp;API</p>
+
+                <ul class="skills">
+                  <li class="">HTML5</li>
+                  <span class="break">/</span>
+                  <li class="">CSS3</li>
+                  <span class="break">/</span>
+                  <li class="">Sass</li>
+                  <span class="break">/</span>
+                  <li class="">Javascript</li>
+                  <span class="break">/</span>
+                  <li class="">Jquery</li>
+                  <span class="break">/</span>
+                  <li class="">API</li>
+                </ul>
+
                 <div class="link-container live-right">
                   <a href="https://alexandershin.ca/weather-gallery/" target="_blank" class="link-live">Live</a>
                   <a href="https://github.com/alexandershindennisoba/weather-gallery" target="_blank" class="link-github">Github</a>
@@ -142,7 +169,19 @@
                 <h2>Board Games Night</h2>
                 <p class="project-desc">Find the perfect board game for a fun night!</p>
                 <p>Board Games Night is a quiz application that helps users find the right board game for their group.</p>
-                <p class="skills">HTML5&nbsp;&nbsp;/ &nbsp;&nbsp;CSS3&nbsp;&nbsp;/&nbsp;&nbsp;Sass&nbsp;&nbsp;/&nbsp;&nbsp;Javscript&nbsp;&nbsp;/&nbsp;&nbsp;Jquery</p>
+
+                <ul class="skills">
+                  <li class="">HTML5</li>
+                  <span class="break">/</span>
+                  <li class="">CSS3</li>
+                  <span class="break">/</span>
+                  <li class="">Sass</li>
+                  <span class="break">/</span>
+                  <li class="">Javascript</li>
+                  <span class="break">/</span>
+                  <li class="">Jquery</li>
+                </ul>
+
                 <div class="link-container">
                   <a href="https://alexandershin.ca/board-games-night/" target="_blank" class="link-live">Live</a>
                   <a href="https://github.com/alexandershin/alexander-shin-project03" target="_blank" class="link-github">Github</a>
@@ -157,7 +196,15 @@
                 <h2>Bikerland</h2>
                 <p class="project-desc">A PSD Conversion featuring bikes</p>
                 <p>Bikerland is a PSD conversion using HTML and CSS. It is a single page site with hover effects, animations and responsive design.</p>
-                <p class="skills">Html5&nbsp;&nbsp;/&nbsp;&nbsp;CSS3&nbsp;&nbsp;/&nbsp;&nbsp;Responsive Design</p>
+
+                <ul class="skills">
+                  <li class="">HTML5</li>
+                  <span class="break">/</span>
+                  <li class="">CSS3</li>
+                  <span class="break">/</span>
+                  <li class="">Responsive Design</li>
+                </ul>
+
                 <div class="link-container live-right">
                   <a href="https://alexandershin.ca/bikerland/" target="_blank" class="link-live">Live</a>
                   <a href="https://github.com/alexandershin/alexander_shin_project01" target="_blank" class="link-github">Github</a>
