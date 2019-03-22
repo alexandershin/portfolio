@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Alexander Shin</title>
   </head>
@@ -23,7 +24,7 @@
     <header>
       <div class="header-overlay">
         <!-- PARTICLE JS -->
-        <!-- <div id="particles-js"></div> -->
+        <div id="particles-js"></div>
         <div class="wrapper-wide">
           <div class="header-hero-name">
             <h1>Alexander Shin</h1>
@@ -33,7 +34,7 @@
             <div class="wrapper-wide header-section">
               <div class="header-section-name">
                 <a href="#">
-                  <img src="assets/logo7.png" alt="">
+                  <img src="assets/logo7.png" alt="logo of website with designed initials of letters A and S">
                 </a>
               </div>
               <!-- NAV BAR STARTS -->
@@ -68,7 +69,7 @@
     <!-- MAIN SECTION STARTS -->
     <main>
       <!-- ABOUT SECTION STARTS -->
-      <section class="about-section" id="about">
+      <section class="about-section" id="about" data-aos="fade-up" data-aos-offset="400">
         <div class="wrapper-wide">
           <h2 class="title">The Coder</h2>
           <div class="about">
@@ -90,7 +91,7 @@
           <div class="portfolio-container">
             <h2 class="title">Projects</h2>
           </div>
-            <div class="project-first five">
+            <div class="project-first five" data-aos="fade-right" data-aos-offset="400">
               <div class="project-image">
                 <img src="assets/todoom.png" alt="computer screen capture of to doom list project">
               </div>
@@ -101,15 +102,13 @@
                 <p>To Doom List is a group agency project created with React using Firebase, Google authentication, and the Mapquest API. Users are able to login with their Google or as a guest and can choose a bunker. Each bunker has it's own lists and memos that can be added, deleted or checked off as complete. Made in collaboration with <a href="http://ahuoizabaiye.com/" target="_blank">Ahuoiza Baiye</a>, <a href="http://glenmccann.com/" target="_blank">Glen McCann</a>, and <a href="http://zoeconnolly.com/" target="_blank">Zoe Connolly</a></p>
                 <ul class="skills">
                   <li class="">React</li>
-                  <span class="break">/</span>
+                  <span class="break">|</span>
                   <li class="">CSS3</li>
-                  <span class="break">/</span>
+                  <span class="break">|</span>
                   <li class="">Firebase</li>
-                  <span class="break">/</span>
-                  <li class="">API</li>
+                  <span class="break">|</span>
+                  <li class="">REST API</li>
                 </ul>
-<!--                 
-                <p class="skills">React<span class="break">/</span>CSS3<span class="break">/</span>Firebase<span class="break">/</span>API</p> -->
 
                 <div class="link-container">
                   <a href="https://doomsday-clone-609b1.firebaseapp.com/" target="_blank" class="link-live">Live</a>
@@ -132,7 +131,7 @@
                 </div>
               </div>
             </div> -->
-            <div class="project three">
+            <div class="project three" data-aos="fade-left" data-aos-offset="300">
               <div class="project-image">
                 <img src="assets/weather.png" alt="screen capture of weather gallery project">
               </div>
@@ -141,18 +140,18 @@
                 <p class="project-desc">Check the weather with class</p>
                 <p>The Weather Gallery is powered by JavaScript, jQuery, the OpenWeather API, and Rijksmuseum API. Type in a city to find the weather condition with an associated image from the Rijksmuseum. Made in collaboration with <a href="http://dennisoba.io/" target="_blank">Dennis Oba</a>.</p>
 
-                <ul class="skills">
+                <ul class="skills skills-right">
                   <li class="">HTML5</li>
-                  <span class="break">/</span>
+                  <span class="break">|</span>
                   <li class="">CSS3</li>
-                  <span class="break">/</span>
+                  <span class="break">|</span>
                   <li class="">Sass</li>
-                  <span class="break">/</span>
+                  <span class="break">|</span>
                   <li class="">Javascript</li>
-                  <span class="break">/</span>
+                  <span class="break">|</span>
                   <li class="">Jquery</li>
-                  <span class="break">/</span>
-                  <li class="">API</li>
+                  <span class="break">|</span>
+                  <li class="">REST API</li>
                 </ul>
 
                 <div class="link-container live-right">
@@ -161,7 +160,7 @@
                 </div>
               </div>
             </div>
-            <div class="project two">
+            <div class="project two" data-aos="fade-right" data-aos-offset="300">
               <div class="project-image">
                 <img src="assets/boardgame.png" alt="screen capture of board games night project">
               </div>
@@ -172,13 +171,13 @@
 
                 <ul class="skills">
                   <li class="">HTML5</li>
-                  <span class="break">/</span>
+                  <span class="break">|</span>
                   <li class="">CSS3</li>
-                  <span class="break">/</span>
+                  <span class="break">|</span>
                   <li class="">Sass</li>
-                  <span class="break">/</span>
+                  <span class="break">|</span>
                   <li class="">Javascript</li>
-                  <span class="break">/</span>
+                  <span class="break">|</span>
                   <li class="">Jquery</li>
                 </ul>
 
@@ -188,7 +187,7 @@
                 </div>
               </div>
             </div>
-            <div class="project one last">
+            <div class="project one last" data-aos="fade-left" data-aos-offset="300">
               <div class="project-image">
                 <img src="assets/bikerland.png" alt="computer screen capture of Bikerland project">
               </div>
@@ -197,11 +196,11 @@
                 <p class="project-desc">A PSD Conversion featuring bikes</p>
                 <p>Bikerland is a PSD conversion using HTML and CSS. It is a single page site with hover effects, animations and responsive design.</p>
 
-                <ul class="skills">
+                <ul class="skills skills-right">
                   <li class="">HTML5</li>
-                  <span class="break">/</span>
+                  <span class="break">|</span>
                   <li class="">CSS3</li>
-                  <span class="break">/</span>
+                  <span class="break">|</span>
                   <li class="">Responsive Design</li>
                 </ul>
 
@@ -216,11 +215,11 @@
         <!-- PORTFOLIO SECTION ENDS -->
 
         <!-- SKILLS SECTION STARTS -->
-        <section class="skills-section" id="skills">
+        <section class="skills-section" id="skills" data-aos="fade-up" data-aos-offset="400">
           <div class="wrapper-wide">
             <h2 class="title">Skills</h2>
 
-            <div>
+            <div class="icon-section-container">
               <div class="icon-row">
                 <div class="icon-container">
                   <span class="icon icon-html5"></span>
@@ -336,6 +335,10 @@
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="scripts/script.js"></script>
   </body>
 </html>

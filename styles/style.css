@@ -551,7 +551,7 @@ header {
     line-height: 1; }
 
 .about-text-greeting {
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-size: 2.8rem; }
 
 .about-image {
@@ -616,7 +616,7 @@ header {
   .project-text h2 {
     font-size: 2.5rem;
     padding-bottom: 20px;
-    font-family: 'Teko', sans-serif; }
+    font-family: "Teko", sans-serif; }
   .project-text p:nth-of-type(1) {
     font-size: 1.4rem;
     padding: 0;
@@ -626,7 +626,7 @@ header {
     text-transform: capitalize; }
 
 .project-desc {
-  font-family: 'Teko', sans-serif; }
+  font-family: "Teko", sans-serif; }
 
 .skills {
   display: -webkit-box;
@@ -639,6 +639,11 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   color: #235789; }
+
+.skills-right {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
 
 .break {
   padding: 0 10px; }
@@ -676,14 +681,25 @@ header {
     background: #235789; }
 
 .skills-section {
-  height: 100vh;
   padding-top: 80px;
+  padding-bottom: 40px;
   text-align: center; }
   .skills-section h2 {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     padding-bottom: 10px;
     color: #235789;
     border-bottom: 10px solid #f1d302; }
+
+.icon-section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  width: 80%;
+  margin: 0 auto; }
 
 .icon-row {
   display: -webkit-box;
@@ -692,10 +708,11 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap; }
+  -ms-flex-flow: row;
+  flex-flow: row; }
 
 .icon-container {
   display: -webkit-box;
@@ -705,13 +722,13 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
   flex-flow: column;
-  padding: 40px 40px; }
+  padding: 40px; }
 
 .icon {
   font-size: 3.7rem; }
 
 .name {
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   text-transform: uppercase;
   font-size: .9rem;
   letter-spacing: 1px;
@@ -884,24 +901,13 @@ footer {
   footer p {
     color: #FFF; }
 
-@media (max-width: 1280px) {
-  .about-text {
-    width: 100%; } }
-
-@media (max-width: 1050px) {
-  .header-hero-name h1 {
-    font-size: 4rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .header-hero-name p {
-    font-size: 1rem; }
+@media (max-width: 1212px) {
   .about {
     -ms-flex-flow: wrap;
-    flex-flow: wrap; }
+    flex-flow: wrap;
+    margin-bottom: 80px; }
   .about-image {
-    width: 50%;
+    width: 40%;
     padding-right: 0px; }
   .about-text {
     width: 100%;
@@ -924,17 +930,84 @@ footer {
       padding: 10px 0;
       line-height: 1; }
   .about-text-greeting {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .project-first {
+    display: block; }
+  .project-image {
+    width: 100%; }
+  .project-text {
+    width: 100%; }
+  .one,
+  .three {
+    text-align: left; }
+  .skills-right {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .live-right {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; } }
 
-@media (max-width: 950px) {
+@media (max-width: 1100px) {
   .header-hero-name h1 {
-    font-size: 2.8rem;
+    font-size: 4.8rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
   .header-hero-name p {
-    font-size: 1rem; } }
+    font-size: 1.9rem; } }
+
+@media (max-width: 1050px) {
+  .header-hero-name h1 {
+    font-size: 4.8rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .header-hero-name p {
+    font-size: 1.9rem; } }
+
+@media (max-width: 950px) {
+  .header-hero-name h1 {
+    font-size: 4.3rem; }
+  .header-hero-name p {
+    font-size: 1.8rem; }
+  .icon-container {
+    padding: 30px; } }
+
+@media (max-width: 800px) {
+  .header-hero-name h1 {
+    font-size: 4rem; }
+  .header-hero-name p {
+    font-size: 1.5rem; } }
+
+@media (max-width: 760px) {
+  .header-hero-name h1 {
+    font-size: 3.5rem; }
+  .header-hero-name p {
+    font-size: 1.2rem; }
+  .icon-section-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    width: 100%;
+    margin: 0 auto; }
+  .icon-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    padding: 20px; }
+  .icon-container {
+    padding: 20px; }
+  .icon {
+    font-size: 3rem; } }
 
 @media (max-width: 500px) {
   .title {
@@ -942,9 +1015,11 @@ footer {
   .header-hero-name {
     -webkit-box-align: start;
     -ms-flex-align: start;
-    align-items: flex-start;
-    font-size: 2.8rem; }
+    align-items: flex-start; }
+    .header-hero-name h1 {
+      font-size: 2.5rem; }
     .header-hero-name p {
+      font-size: 1rem;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -981,9 +1056,28 @@ footer {
   .one,
   .three {
     text-align: left; }
+  .skills-right {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
   .live-right {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start; }
   .icon {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .icon-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    padding: 20px; } }
+
+@media (max-width: 337px) {
+  .email-container a p {
+    font-size: .9rem; }
+  footer p {
+    font-size: .7rem; } }
